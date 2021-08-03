@@ -1,14 +1,16 @@
-* {
-    box-sizing:border-box;
-    overflow-x: hidden;
-}
-body{
-    font-family:sans-serif;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-img
-{
-    max-width: 100%;
+body{
+  min-height: 100vh;
+  background-color: #fff;
+}
+a{
+  text-decoration: none;
 }
 
 .container
@@ -19,186 +21,270 @@ img
   margin-left: 5%;
  }
 
- /*menu header desktop*/
- .logo-menu{
-  flex-grow: 8;
- }
 
- .off-canvas ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+/* nav desktop */
+header .navDesc{
+  position: fixed;
+  height: 50px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  transition: 0.6s;
+  background-color: #000;
+  z-index: 100;
+}
+header .navDesc .logo{
+  position: relative;
+  font-weight: 700;
+  color: #fff;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
+  margin-left: 5%;
+}
+header .navDesc ul{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5%;
+}
+header .navDesc ul li{
+  position: relative;
+  list-style: none;
+  
+}
+header .navDesc ul li a{
+  position: relative;
+  margin: 0 15px;
+  color: #fff;
+  letter-spacing: 2px;
+  transition: 0.6s;
+  font-weight: 500;
+}
+/* nav mob */
+.sidenav{
+  display: none;
+}
+#mainoffcanvas{
+  display :none;
+}
+/* slide */
+main banner {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fafafd;
+}
+
+.slider{
+  position: relative;
+  background: #000116;
+  width: 100%;
+  min-height: 500px;
+  margin: 20px;
   overflow: hidden;
-  background-color: #333;
+  border-radius: 10px;
 }
 
-.logo-menu{
-  flex-grow: 2;
+.slider .slide{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: circle(0% at 0 50%);
 }
-.off-canvas li {
-  float: left;
+
+.slider .slide.active{
+  clip-path: circle(150% at 0 50%);
+  transition: 2s;
+}
+
+.slider .slide img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider .slide .info{
+  position: absolute;
+  color: #222;
+  background: rgba(255, 255, 255, 0.3);
+  width: 75%;
+  margin-top: 50px;
+  margin-left: 50px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 25px rgb(1 1 1 / 5%);
+}
+
+.slider .slide .info h2{
+  font-size: 2em;
+  font-weight: 800;
+}
+
+.slider .slide .info p{
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.navigation{
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.slider:hover .navigation{
+  opacity: 1;
+}
+
+.prev-btn, .next-btn{
+  z-index: 999;
+  font-size: 2em;
+  color: #222;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
   cursor: pointer;
 }
 
-.off-canvas li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-.off-canvas li a:active
-{
-  background-color: white;
+.prev-btn{
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 
-.off-canvas li a:hover {
-  background-color: #111;
+.next-btn{
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 
-/*menu header mobile*/
- .sidenav{
+.navigation-visibility{
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-visibility .slide-icon{
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.5);
+  width: 20px;
+  height: 10px;
+  transform: translateY(-50px);
+  margin: 0 6px;
+  border-radius: 2px;
+  box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+}
+
+.navigation-visibility .slide-icon.active{
+  background: #4285F4;
+}
+
+@media (max-width: 900px){
+  /* nav mob */
+  .sidenav{
     display: none;
   }
   #mainoffcanvas{
     display :none;
   }
+  .slider{
+    width: 100%;
+  }
 
-  /*slider*/
-  
-  .mySlides {display: none;}
-
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 100%;
-  position: relative;
-  margin: auto;
-  height: 400px;
-  overflow-y: hidden;
+  .slider .slide .info{
+    position: relative;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.activeSlider {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-  @media screen and (max-width: 600px)
-  {
-    .slideshow-container
-    {
-        margin-top: 40px;
-        overflow-x: hidden;
-        width: 100%;
-       
-    }
-
-    /*menu header desktop*/
-    .off-canvas{
-      display : none;
-    }
-/*menu header mobile */
+@media (max-width: 500px){
+  /* nav mob */
   .sidenav {
-  display: block;
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+    display: block;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 100;
+  }
+  
+  .sidenav a {
+    display: block;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+    display: block;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    display: block;
+  }
+  
+  #mainoffcanvas {
+    transition: margin-left .5s;
+    padding: 16px;
+    display: block;
+    position: fixed;
+    background-color: black;
+    font-weight: 700;
+  color: #fff;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
+    width: 100%;
+    margin-top: -17px;
+    z-index: 100;
+  }
+  
+  /* nav desktop */
+  header .navDesc{
+    display: none;
+  }
+  /* slider */
+  main banner .slider{
+    margin-top: 100px;
+    z-index: 4;
+  }
+  .slider .slide .info h2{
+    font-size: 1.8em;
+    line-height: 40px;
+  }
 
+  .slider .slide .info p{
+    font-size: 0.9em;
+  }
 }
+      
 
-.sidenav a {
-  display: block;
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-  display: block;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-  display: block;
-}
-
-#mainoffcanvas {
-  transition: margin-left .5s;
-  padding: 16px;
-  display: block;
-  position: fixed;
-  background-color: black;
-  color: white;
-  width: 100%;
-  margin-top: -17px;
-}
-
-
- @media screen and (max-height: 450px) {
-  ..off-canvas{display :none;}
+@media screen and (max-height: 450px) {
+  .off-canvas{display :none;}
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
