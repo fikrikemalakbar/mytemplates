@@ -9,6 +9,7 @@
   </head>
   <body>
   <header>
+        <div id="tohome"></div>
         <div class="navDesc">
               <a class="logo"href="">any code</a>
               <ul class="nDesc">
@@ -33,6 +34,7 @@
         <div id="mainoffcanvas">
               <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; &nbsp;&nbsp;Logo </span>
         </div>
+       
     </header>
 
 
@@ -75,11 +77,16 @@
     </div>
   </banner>
 </main>
+
 <footer>
   <div class="footer-social">
-  <i class="fab fa-whatsapp"></i>
+  <a href="" class="fab fa-whatsapp"></a>
   </div>
+  <div class="footer-toTop">
+<a href="#tohome"class="fas fa-angle-double-up"></a>
+</div>
 </footer>
+
     <script src="front/js/main.js"></script>
   </body>
 </html>

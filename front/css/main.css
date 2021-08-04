@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body{
@@ -198,16 +199,32 @@ display: flex;
 justify-content: flex-end;
 overflow: hidden;
 }
-footer .footer-social i{
+footer .footer-social a{
   font-size: 50px;
   background: green;
   color: white;
   border-radius: 50%;
   position: fixed;
-  top: 90%;
+  top: 80%;
   z-index: 3000;
   
 }
+
+footer .footer-toTop{
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+  }
+  footer .footer-toTop a {
+    font-size: 30px;
+    position: fixed;
+    margin: 10px;
+    opacity: 0.6;
+    top: 90%;
+    z-index: 3000;
+    
+  }
+ 
 
 @media (max-width: 900px){
   /* nav mob */
