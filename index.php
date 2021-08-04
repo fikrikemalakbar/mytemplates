@@ -11,11 +11,11 @@
   <header>
         <div class="navDesc">
               <a class="logo"href="">Logo</a>
-              <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Article</a></li>
+              <ul class="nDesc">
+                <li><a class="navADesc" href="#home">Home</a></li>
+                <li><a class="navADesc" href="#about">About</a></li>
+                <li><a class="navADesc" href="">Portfolio</a></li>
+                <li><a class="navADesc" href="">Article</a></li>
               </ul>
         </div>
         <div id="mySidenav" class="sidenav">

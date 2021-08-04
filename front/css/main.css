@@ -66,6 +66,14 @@ header .navDesc ul li a{
   transition: 0.6s;
   font-weight: 500;
 }
+header .navDesc ul li a:hover{
+  background-color: rgb(166, 172, 81);
+  color: #fff;
+}
+ul.nDesc li a.active{
+  color: rgb(255, 0, 0);
+}
+
 /* nav mob */
 .sidenav{
   display: none;

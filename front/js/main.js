@@ -8,10 +8,20 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("mainoffcanvas").style.marginLeft= "0";
 }
+// desktop nav
+const nDest = document.querySelector(".nDesc");
+nDest.addEventListener('click', function(e) {
+	const targetnDest = e.target;
+	if(targetnDest.classList.contains('navADesc')) {
+		const menuLinkActive = document.querySelector("ul li a.active");
+		if(menuLinkActive !== null && targetnDest.getAttribute('href') !== menuLinkActive.getAttribute('href')) {
+			menuLinkActive.classList.remove('active');
+		}
+		targetnDest.classList.add('active');
+	}
+});
 
 // slider
-
-
 const slider = document.querySelector(".slider");
 const nextBtn = document.querySelector(".next-btn");
 const prevBtn = document.querySelector(".prev-btn");
