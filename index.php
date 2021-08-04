@@ -10,12 +10,17 @@
   <body>
   <header>
         <div class="navDesc">
-              <a class="logo"href="">Logo</a>
+              <a class="logo"href="">any code</a>
               <ul class="nDesc">
                 <li><a class="navADesc" href="#home">Home</a></li>
                 <li><a class="navADesc" href="#about">About</a></li>
                 <li><a class="navADesc" href="">Portfolio</a></li>
                 <li><a class="navADesc" href="">Article</a></li>
+                <li><a class="navADesc" href="">En</a></li>
+                <li style="color: #fff;">|</li>
+                <li><a class="navADesc" href="">Id</a></li>
+                
+                
               </ul>
         </div>
         <div id="mySidenav" class="sidenav">
@@ -70,7 +75,11 @@
     </div>
   </banner>
 </main>
-
+<footer>
+  <div class="footer-social">
+  <i class="fab fa-whatsapp"></i>
+  </div>
+</footer>
     <script src="front/js/main.js"></script>
   </body>
 </html>
