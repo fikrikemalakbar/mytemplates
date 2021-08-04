@@ -95,7 +95,7 @@ main banner {
   background: #000116;
   width: 100%;
   min-height: 500px;
-  margin: 20px;
+  /* margin: 20px; */
   overflow: hidden;
   border-radius: 10px;
 }
@@ -193,6 +193,21 @@ main banner {
 .navigation-visibility .slide-icon.active{
   background: #4285F4;
 }
+footer .footer-social{
+display: flex;
+justify-content: flex-end;
+overflow: hidden;
+}
+footer .footer-social i{
+  font-size: 50px;
+  background: green;
+  color: white;
+  border-radius: 50%;
+  position: fixed;
+  top: 90%;
+  z-index: 3000;
+  
+}
 
 @media (max-width: 900px){
   /* nav mob */
@@ -288,6 +303,7 @@ main banner {
   .slider .slide .info p{
     font-size: 0.9em;
   }
+  
 }
       
 
