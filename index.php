@@ -17,9 +17,9 @@
                 <li><a class="navADesc" href="#about">About</a></li>
                 <li><a class="navADesc" href="">Portfolio</a></li>
                 <li><a class="navADesc" href="">Article</a></li>
-                <li><a class="navADesc" href="">En</a></li>
-                <li style="color: #fff;">|</li>
-                <li><a class="navADesc" href="">Id</a></li>
+                <li><a style="font-size:10pt"class="navADesc" href="">En</a></li>
+                <li style="color: #fff;font-size:10pt;">|</li>
+                <li><a style="font-size:10pt"class="navADesc" href="">Id</a></li>
                 
                 
               </ul>

@@ -205,7 +205,8 @@ footer .footer-social a{
   color: white;
   border-radius: 50%;
   position: fixed;
-  top: 80%;
+  top: 75%;
+  margin-right: 3px;
   z-index: 3000;
   
 }
