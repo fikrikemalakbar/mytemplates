@@ -14,16 +14,6 @@ body{
 a{
   text-decoration: none;
 }
-
-.container
- {
-   display: flex;
-  justify-content: center;
-  margin-right: 5%; 
-  margin-left: 5%;
- }
-
-
 /* nav desktop */
 header .navDesc{
   position: fixed;
@@ -195,24 +185,26 @@ aside {
 .navigation-visibility .slide-icon.active{
   background: #4285F4;
 }
-.container-aboutHome{
-  width: 95%;
-  margin: 10px auto;
-  padding: 10px;
-  box-sizing: border-box;
+.aboutHomeAll{
+  box-shadow: 5px 10px #888888;
 }
 .aboutHomeTitle{
   display: flex;
   justify-content: center;
+  text-decoration-line: underline;
 }
-.rowAboutHome{
+.containerAboutHome{
+  max-width: 95%;
+  margin: 30px auto;
   display: flex;
+  justify-content: space-between;
 }
-.aboutHomeImg{
-flex-grow: 1;
+.aboutHome{
+  width:60%;
 }
-.aboutHometxt{
-flex-grow: 3;
+.aboutHome img{
+  max-width: 100%;
+  padding-right: 10px;
 }
 footer .footer-social{
 display: flex;
@@ -228,9 +220,7 @@ footer .footer-social a{
   top: 75%;
   margin-right: 3px;
   z-index: 3000;
-  
 }
-
 footer .footer-toTop{
   display: flex;
   justify-content: flex-end;
@@ -342,6 +332,18 @@ footer .footer-toTop{
     font-size: 0.9em;
   }
   
+  footer .footer-social{
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+  }
+  .containerAboutHome{
+    display: block;
+  }
+  .aboutHome{
+    width: 100%;
+    text-align: justify;
+  }
 }
       
 

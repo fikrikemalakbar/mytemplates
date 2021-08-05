@@ -20,8 +20,6 @@
                 <li><a style="font-size:10pt"class="navADesc" href="">En</a></li>
                 <li style="color: #fff;font-size:10pt;">|</li>
                 <li><a style="font-size:10pt"class="navADesc" href="">Id</a></li>
-                
-                
               </ul>
         </div>
         <div id="mySidenav" class="sidenav">
@@ -34,10 +32,7 @@
         <div id="mainoffcanvas">
               <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; &nbsp;&nbsp;Logo </span>
         </div>
-       
     </header>
-
-
 <aside>
   <div class="slider">
       <div class="slide active">
@@ -73,18 +68,19 @@
     </div>
 </aside>
 <section>
-  <div class="container-aboutHome">
-    <div class="aboutHomeTitle">
-      About Title
-    </div>
-   <div class="rowAboutHome">
-   <div class="aboutHomeImg">
-      image
-    </div>
-    <div class="aboutHomeTxt">
-      this is title
-    </div>
-   </div>
+  <div id="about"></div>
+  <div class="aboutHomeAll">
+      <div class="aboutHomeTitle">
+        <strong>About Us</strong>
+      </div>
+      <div class="containerAboutHome">
+        <div class="aboutHome image">
+          <img src="img/1.jpg" alt="">
+        </div>
+        <div class="aboutHome txt">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consequatur quod ex. Fugit veniam aliquam excepturi doloremque perspiciatis. Debitis maxime, corrupti vitae enim libero rerum explicabo beatae eos saepe quo.
+        </div>
+      </div>
   </div>
 </section>
 <footer>
