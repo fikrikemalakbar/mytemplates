@@ -84,36 +84,24 @@
 </section>
 <main>
   <div class="serviceHomeAll">
-      <div class="serviceHomeTitle">
-        <strong><h2>Our Services</h2></strong>
-      </div>
-      <br>
-      <div class="containerHomeService">
-        <div class="sliderHomeServiceWrapper">
-          <div class="sliderHomeService">
-            <div class="wrapperHomeService">
-                  <div class="slideHomeService">
-                    <img src="img/4.jpg" alt="">
-                  </div>
-                  <div class="slideHomeService">
-                    <img src="img/4.jpg" alt="">
-                  </div>
-                  <div class="slideHomeService">
-                    <img src="img/4.jpg" alt="">
-                  </div>
-                  <div class="slideHomeService">
-                    <img src="img/4.jpg" alt="">
-                  </div>
-                  <div class="slideHomeService">
-                    <img src="img/4.jpg" alt="">
-                  </div>
-                  <div class="slideHomeService">
-                    <img src="img/4.jpg" alt="">
-                  </div>
-            </div>
-          </div>
+        <div class="serviceHomeTitle">
+          <h2><strong>Our Services</strong></h2>
         </div>
-      </div>
+        <div class="containerHomeService">
+              <h3>slider</h3>
+            <div class="sliderHomeService-wrapper">
+              <div class="sliderHomeService">
+                  <div class="wrapperHomeService">
+                    <div class="slideHomeService"><img src="img/4.jpg" alt=""></div>
+                    <div class="slideHomeService"><img src="img/4.jpg" alt=""></div>
+                    <div class="slideHomeService"><img src="img/4.jpg" alt=""></div>
+                    <div class="slideHomeService"><img src="img/4.jpg" alt=""></div>
+                    <div class="slideHomeService"><img src="img/4.jpg" alt=""></div>
+                    <div class="slideHomeService"><img src="img/4.jpg" alt=""></div>
+                  </div>
+              </div>
+            </div>
+        </div>
   </div>
 </main>
 <footer>

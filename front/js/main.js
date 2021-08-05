@@ -104,5 +104,11 @@ slider.addEventListener("mouseout", () => {
 
 
 // service home
-
+var slidersHomeService = document.querySelectorAll('.sliderHomeService');
+for (let i = 0; <= slidersHomeService.length; i++){
+  let slidesHomeService = slidersHomeService[0].querySelectorAll('.slideHomeService');
+  let wrapperHomeService = slidersHomeService[0].querySelector('.wrapperHomeService');
+  wrapperHomeService.style.width = (slidesHomeService.length * slidesHomeService[0].clientWidth) + 'px';
+  
+}
   

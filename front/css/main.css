@@ -210,19 +210,23 @@ aside {
 /* main service home */
 .serviceHomeAll{
   background-color: #ddd;
-  padding: 30px;
-  overflow: hidden;
   width: 100%;
+  overflow: hidden ;
+  position: sticky !important;
+  position: -webkit-sticky !important;
+  z-index: 1002;
+  top:0
 }
 .serviceHomeTitle{
+  text-decoration-line: underline;
   display: flex;
   justify-content: center;
-  text-decoration-line: underline;
 }
-
 .containerHomeService{
-  margin: 0 auto;
   max-width: 1500px;
+  margin: 0 auto;
+  padding: 30px;
+  cursor: pointer;
 }
 .sliderHomeService{
   width: 100%;
@@ -239,7 +243,7 @@ aside {
 }
 .sliderHomeService .slideHomeService img{
   width: 100%;
-  padding: 30px;
+  padding: 10px;
 }
 footer .footer-social{
 display: flex;
@@ -292,7 +296,7 @@ footer .footer-toTop{
   }
 }
 @media only screen and (min-width: 768px) {
-  .sliderHomeServiceWrapper{
+  .sliderHomeService-wrapper{
     overflow: hidden;
     width: 100%;
   }
