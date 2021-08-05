@@ -185,9 +185,6 @@ aside {
 .navigation-visibility .slide-icon.active{
   background: #4285F4;
 }
-.aboutHomeAll{
-  box-shadow: 5px 10px #888888;
-}
 .aboutHomeTitle{
   display: flex;
   justify-content: center;
@@ -205,6 +202,16 @@ aside {
 .aboutHome img{
   max-width: 100%;
   padding-right: 10px;
+}
+.serviceHome{
+  background-color: #ddd;
+  opacity: 0.5;
+  opacity: 1;
+}
+.serviceHomeTitle{
+  display: flex;
+  justify-content: center;
+  text-decoration-line: underline;
 }
 footer .footer-social{
 display: flex;
@@ -231,7 +238,7 @@ footer .footer-toTop{
     position: fixed;
     margin: 10px;
     opacity: 0.6;
-    top: 90%;
+    top: 94%;
     z-index: 3000;
     
   }

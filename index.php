@@ -69,7 +69,6 @@
 </aside>
 <section>
   <div id="about"></div>
-  <div class="aboutHomeAll">
       <div class="aboutHomeTitle">
         <strong>About Us</strong>
       </div>
@@ -81,8 +80,14 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consequatur quod ex. Fugit veniam aliquam excepturi doloremque perspiciatis. Debitis maxime, corrupti vitae enim libero rerum explicabo beatae eos saepe quo.
         </div>
       </div>
-  </div>
 </section>
+<main>
+  <div class="serviceHome">
+  <div class="serviceHomeTitle">
+    <strong>Services</strong>
+  </div>
+  </div>
+</main>
 <footer>
   <div class="footer-social">
   <a href="" class="fab fa-whatsapp"></a>
