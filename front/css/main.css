@@ -9,6 +9,7 @@
 body{
   min-height: 100vh;
   background-color: #fff;
+  line-height: 1.65;
 }
 a{
   text-decoration: none;
@@ -83,7 +84,7 @@ ul.nDesc li a.active{
   display :none;
 }
 /* slide */
-main banner {
+aside {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -193,6 +194,25 @@ main banner {
 
 .navigation-visibility .slide-icon.active{
   background: #4285F4;
+}
+.container-aboutHome{
+  width: 95%;
+  margin: 10px auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.aboutHomeTitle{
+  display: flex;
+  justify-content: center;
+}
+.rowAboutHome{
+  display: flex;
+}
+.aboutHomeImg{
+flex-grow: 1;
+}
+.aboutHometxt{
+flex-grow: 3;
 }
 footer .footer-social{
 display: flex;
@@ -309,7 +329,7 @@ footer .footer-toTop{
     display: none;
   }
   /* slider */
-  main banner .slider{
+  aside .slider{
     margin-top: 100px;
     z-index: 4;
   }

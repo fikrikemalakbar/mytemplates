@@ -38,8 +38,7 @@
     </header>
 
 
-<main>
-  <banner>
+<aside>
   <div class="slider">
       <div class="slide active">
         <img src="img/1.jpg" alt="">
@@ -62,8 +61,6 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
-     
-     
       <div class="navigation">
         <i class="fas fa-chevron-left prev-btn"></i>
         <i class="fas fa-chevron-right next-btn"></i>
@@ -72,12 +69,24 @@
         <div class="slide-icon active"></div>
         <div class="slide-icon"></div>
         <div class="slide-icon"></div>
-        
       </div>
     </div>
-  </banner>
-</main>
-
+</aside>
+<section>
+  <div class="container-aboutHome">
+    <div class="aboutHomeTitle">
+      About Title
+    </div>
+   <div class="rowAboutHome">
+   <div class="aboutHomeImg">
+      image
+    </div>
+    <div class="aboutHomeTxt">
+      this is title
+    </div>
+   </div>
+  </div>
+</section>
 <footer>
   <div class="footer-social">
   <a href="" class="fab fa-whatsapp"></a>
