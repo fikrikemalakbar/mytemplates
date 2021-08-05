@@ -14,6 +14,9 @@ body{
 a{
   text-decoration: none;
 }
+img{
+  max-width: 100%;
+}
 /* nav desktop */
 header .navDesc{
   position: fixed;
@@ -195,6 +198,7 @@ aside {
   margin: 30px auto;
   display: flex;
   justify-content: space-between;
+  padding: 30px;
 }
 .aboutHome{
   width:60%;
@@ -203,15 +207,39 @@ aside {
   max-width: 100%;
   padding-right: 10px;
 }
-.serviceHome{
+/* main service home */
+.serviceHomeAll{
   background-color: #ddd;
-  opacity: 0.5;
-  opacity: 1;
+  padding: 30px;
+  overflow: hidden;
+  width: 100%;
 }
 .serviceHomeTitle{
   display: flex;
   justify-content: center;
   text-decoration-line: underline;
+}
+
+.containerHomeService{
+  margin: 0 auto;
+  max-width: 1500px;
+}
+.sliderHomeService{
+  width: 100%;
+  overflow-x: scroll;
+}
+.sliderHomeService .wrapperHomeService{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 2160px;
+}
+.sliderHomeService .slideHomeService{
+  width: 360px;
+}
+.sliderHomeService .slideHomeService img{
+  width: 100%;
+  padding: 30px;
 }
 footer .footer-social{
 display: flex;
@@ -261,6 +289,16 @@ footer .footer-toTop{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .sliderHomeServiceWrapper{
+    overflow: hidden;
+    width: 100%;
+  }
+  .sliderHomeService{
+    position: relative;
+    bottom: -18px;
   }
 }
 

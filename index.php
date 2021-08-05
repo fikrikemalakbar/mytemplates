@@ -70,22 +70,50 @@
 <section>
   <div id="about"></div>
       <div class="aboutHomeTitle">
-        <strong>About Us</strong>
+        <strong><h2>About Us</h2></strong>
       </div>
       <div class="containerAboutHome">
         <div class="aboutHome image">
           <img src="img/1.jpg" alt="">
         </div>
         <div class="aboutHome txt">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consequatur quod ex. Fugit veniam aliquam excepturi doloremque perspiciatis. Debitis maxime, corrupti vitae enim libero rerum explicabo beatae eos saepe quo.
+         Hello , my name is Fikri Kemal Akbar, About me an as developer programmer and seo specialst
+         <p><h4 style="text-align:center;"><strong>Why Choice Me?</strong></h4></p>
         </div>
       </div>
 </section>
 <main>
-  <div class="serviceHome">
-  <div class="serviceHomeTitle">
-    <strong>Services</strong>
-  </div>
+  <div class="serviceHomeAll">
+      <div class="serviceHomeTitle">
+        <strong><h2>Our Services</h2></strong>
+      </div>
+      <br>
+      <div class="containerHomeService">
+        <div class="sliderHomeServiceWrapper">
+          <div class="sliderHomeService">
+            <div class="wrapperHomeService">
+                  <div class="slideHomeService">
+                    <img src="img/4.jpg" alt="">
+                  </div>
+                  <div class="slideHomeService">
+                    <img src="img/4.jpg" alt="">
+                  </div>
+                  <div class="slideHomeService">
+                    <img src="img/4.jpg" alt="">
+                  </div>
+                  <div class="slideHomeService">
+                    <img src="img/4.jpg" alt="">
+                  </div>
+                  <div class="slideHomeService">
+                    <img src="img/4.jpg" alt="">
+                  </div>
+                  <div class="slideHomeService">
+                    <img src="img/4.jpg" alt="">
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
 </main>
 <footer>
