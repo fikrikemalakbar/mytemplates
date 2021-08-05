@@ -95,7 +95,6 @@
 <a href="#tohome"class="fas fa-angle-double-up"></a>
 </div>
 </footer>
-
     <script src="front/js/main.js"></script>
   </body>
 </html>
